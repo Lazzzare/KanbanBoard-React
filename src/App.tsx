@@ -1,5 +1,11 @@
+import KanbanBoard from "./components/KanbanBoard";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <KanbanBoard />
+    </div>
+  );
 };
 
 export default App;
