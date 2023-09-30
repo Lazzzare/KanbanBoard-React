@@ -1,4 +1,4 @@
-import DeleteIcons from "../icons/DeleteIcons";
+import DeleteIcon from "../icons/DeleteIcon";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { Column, Id, Task } from "../types";
@@ -12,6 +12,7 @@ interface Props {
   updateColumn: (id: Id, title: string) => void;
   createTask: (ColumnId: Id) => void;
   tasks: Task[];
+  deleteTask: (id: Id) => void;
 }
 
 const ColumnContainer = ({
@@ -20,6 +21,7 @@ const ColumnContainer = ({
   updateColumn,
   createTask,
   tasks,
+  deleteTask,
 }: Props) => {
   const [editMode, setEditMode] = useState(false);
   const {
@@ -91,12 +93,12 @@ const ColumnContainer = ({
           onClick={() => deleteColumn(column.id)}
           className="stroke-gray-500 hover:stroke-white hover:bg-columnBackgroundColor rounded px-1 py-2"
         >
-          <DeleteIcons />
+          <DeleteIcon />
         </button>
       </div>
       <div className="flex flex-grow flex-col gap-4 p-2 overflow-x-hidden overflow-y-auto">
         {tasks.map((task) => (
-          <TaskCard key={task.id} task={task} />
+          <TaskCard key={task.id} task={task} deleteTask={deleteTask} />
         ))}
       </div>
       {/* ContentFooter */}
