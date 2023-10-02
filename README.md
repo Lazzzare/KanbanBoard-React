@@ -4,7 +4,7 @@
 
 # Getting Started
 
-![.gif](./src/assets/news24.gif);
+![.gif](./src/assets/gif.gif)
 
 1. First of all you need to clone app repository from github:
 
@@ -27,7 +27,7 @@ npm run dev
 # Links
 
 - Solution URL: [GitHub Code](https://github.com/Lazzzare/KanbanBoard-React)
-- Live Site URL: [Live Site](https://tic-tac-toe-react-ivory.vercel.app/)
+- Live Site URL: [Live Site](https://kanban-board-react-henna.vercel.app/)
 
 # Built With
 
