@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# KanbanBoard
 
   <img src="./src/assets/Background.PNG" alt="BackgroundImage">
 
